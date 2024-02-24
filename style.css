@@ -9,8 +9,8 @@
     --text-color: hsl(230, 16%, 45%);
     --border-color: hsl(230, 50%, 90%);
     --white-color: hsl(0, 0%, 100%);
-    --body-color: hsl(0, 34%, 57%);
-    /* --body-color: hsl(297, 93%, 16%); */
+    /* --body-color: hsl(0, 34%, 57%); */
+    --body-color: hsl(297, 47%, 27%);
     --container-color: hsla(324, 7%, 86%, 0.98);
     --color-primary: hsl(308, 100%, 32%);
     --bg-primary: hsl(0, 3%, 6%);
