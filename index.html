@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="#intro" class="i">
+      < Vyankatesh />
+    </a>
+    <nav class="nav topnav" id="myTopnav">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#get-in-touch">Contact</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-bars"></i>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="intro container" id="intro">
+      <div class="intro--container">
+        <div class="intro--bio">
+          <div class="head1">
+            <span class="text first-text">I'm a</span>
+            <span class="text sec-text">Vyankatesh Jaju</span>
+        </div>
+          <h2 class="head2">I build things for the web.</h2>
+          <p class="p"> A passionate web app developer. I tend to make use of modern web technologies to build websites
+            that looks great, feels fantastic, and functions correctly.</p>
+          <a class="resume--btn btn" href="assests/Vyankatesh_Jaju.pdf" download="">Resume</a>
+        </div>
+        <div class="intro--photo">
+          <img src="assests/1.JPG" alt="" class="intro--profile">
+        </div>
+      </div>
+    </section>
+    <section class="about container" id="about">
+      <div class="intouch--title">
+        <h2 class="intouch--head about-title"> Introduction</h2>
+        <div class="aboutme-hr-div">
+          <div class="aboutme-bighr-div"></div>
+        </div>
+      </div>
+      <div class="about--container">
+        <div class="about--image">
+          <img src="assests/3.JPG" alt="" class="about--img">
+        </div>
+        <div class="about--bio">
+          <p class="about-paragraph">I have a background in civil engineering , I have a strong interest in the
+            intersection of technology and art. Currently immersed in the world of front-end technologies like HTML,
+            CSS, and JavaScript, I'm actively building a solid foundation to create visually appealing and responsive
+            websites.
+          </p>
+          <h2 class="h2">Here are a few technologies I've been working with recently:</h2>
+          <ul class="technologies">
+            <li><img src="assests/html5.png" alt="">HTML</li>
+            <li><img src="assests/css3.png" alt="">CSS</li>
+            <li><img src="assests/javascript.png" alt="">JavaScript</li>
+            <li><img src="assests/react.png" alt="">React</li>
+            <li><img src="assests/bootstrap.png" alt="">Bootstrap</li>
+            <li><img src="assests/tailwind-css-icon.webp" width="70px">Tailwind CSS</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <section class="education container" id="education">
+      <div class="education--container">
+        <div class="intouch--title">
+          <h2 class="intouch--head education--title">Education</h2>
+          <div class="aboutme-hr-div">
+            <div class="aboutme-bighr-div"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>B.tech(civil) degree from M.B.E.S. college of Enginnering , Ambejogai</h3>
+          <p>2019 - 2023 </p>
+          <p>Dr.B.R.Ambedkar University ,lonere </p>
+          <p>CGPA 7.2 out of 10 </p>
+        </div>
+        <div class="card">
+          <h3>HSC (Maharastra state Board ) </h3>
+          <p> 2018 - 2019 </p>
+          <p> From Dayanand Science College , Latur</p>
+          <h4>Extracurricular Activities:- </h4>
+          <p> Participated in State level Gymnastic Competition.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects container" id="project">
+      <div class="project--container">
+        <div class="intouch--title">
+          <h2 class="intouch--head project--title">Projects</h2>
+          <div class="aboutme-hr-div">
+            <div class="aboutme-bighr-div"></div>
+          </div>
+        </div>
+        <div class="card-container">
+         <div class="project--card" onclick="mycard1()" id="procard1">
+            <img src="assests/netflix.png.png" alt="Project 1" class="project--img">
+            <h4>Project 1: Netflix Clone </h4>
+            <p>using HTML, CSS, JavaScript</p>
+          </div>
+          <div class="project--card" onclick="mycard2()"  id="procard2">
+            <img src="assests/vineshop.png.png" alt="Project 2"  class="project--img img2">
+            <h4>Project 2: Wine Shop </h4>
+            <p>using Swiper Slider, JavaScript, ScrollReveal.</p>
+          </div>
+          <div class="project--card" onclick="mycard3()"  id="procard3">
+            <img src="assests/pngwing.com.png" alt="Project 3" class="project--img">
+            <h4>Project 3: Hotel Website</h4>
+            <p>Using Tailwind CSS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="get-in-touch container" id="get-in-touch">
+      <div class="intouch--title">
+        <h2 class="intouch--head">Let's contact me</h2>
+        <div class="aboutme-hr-div">
+          <div class="aboutme-bighr-div"></div>
+        </div>
+      </div>
+      <div class="getintouch--container">
+        <div class="leftcontainer">
+          <h2>Get in touch</h2>
+          <p>I'm always open to connecting with new people and collaborators. If you have a question, a project in mind,
+            or just want to say hi, feel free to send me a message.</p>
+          <img src="assests/contact.jpg" alt="" class="left--img">
+        </div>
+        <div class="contact-me rightcontainer">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" placeholder="e.g. Narendra Modi" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" placeholder="pmnarendramodi@gmail.com" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" placeholder="Typing a message...." name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social--media">
+          <a href="link.html" target="_blank" class="social--icon "><i class="fa-brands fa-github"></i></a>
+          <a href="link.html" target="_blank" class="social--icon "><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="link.html" target="_blank" class="social--icon "><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="link.html" target="_blank" class="social--icon "><i class="fa-brands fa-instagram"></i></a>
+          <a href="link.html" target="_blank" class="social--icon "><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <pre><div class="copyright"> @venky_jaju All rights reserved. </div></pre> 
+      </div>
+      <a href="#" class="scrollup" id="scroll-up"><i class="fa-regular fa-circle-up"></i></a>
+    </footer>
+  </main>
+  <script src="input.js"></script>
+</body>
+
+</html>
