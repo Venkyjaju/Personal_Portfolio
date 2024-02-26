@@ -33,19 +33,19 @@ setInterval(textLoading, 9000);
 // ===card-1===
 const card1 = document.getElementById('procard1')
 function mycard1() {
-  window.open("https://www.geeksforgeeks.org/", "_blank");
+  window.open("https://netflixbyvenky.netlify.app/", "_blank");
 }
 
 // ===card-2===
 const card2 = document.getElementById('procard2')
 function mycard2() {
-  window.open("https://www.geeksforgeeks.org/", "_blank");
+  window.open("https://royaloakbyvenky.netlify.app/", "_blank");
 }
 
 // ===card-3===
 const card3 = document.getElementById('procard3')
 function mycard3() {
-  window.open("https://www.geeksforgeeks.org/", "_blank");
+  window.open("https://annapurnaveg.netlify.app/", "_blank");
 }
 
 
@@ -79,39 +79,32 @@ window.addEventListener('scroll', scrollUp)
 
 
 // mail
-"use strict";
-const nodemailer = require("nodemailer");
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.forwardemail.net",
-  port: 465,
-  secure: true,
-  auth: {
-    // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-    user: "REPLACE-WITH-YOUR-ALIAS@YOURDOMAIN.COM",
-    pass: "REPLACE-WITH-YOUR-GENERATED-PASSWORD",
-  },
-});
 
-// async..await is not allowed in global scope, must use a wrapper
-async function main() {
-  // send mail with defined transport object
-  const info = await transporter.sendMail({
-    from: '"Fred Foo 👻" <foo@example.com>', // sender address
-    to: "bar@example.com, baz@example.com", // list of receivers
-    subject: "Hello ✔", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
-  });
+// const contactForm = document.getElementById('contact-form');
 
-  console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+// contactForm.addEventListener('submit', async (e) => {
+//     e.preventDefault();
 
-  //
-  // NOTE: You can go to https://forwardemail.net/my-account/emails to see your email delivery status and preview
-  //       Or you can use the "preview-email" npm package to preview emails locally in browsers and iOS Simulator
-  //       <https://github.com/forwardemail/preview-email>
-  //
-}
+//     const email = document.getElementById('email').value;
+//     const message = document.getElementById('message').value;
 
-main().catch(console.error);
+//     try {
+//         const response = await fetch('http://localhost:3000/send-email', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({ email, message })
+//         });
+//         if (response.ok) {
+//             alert('Email sent successfully!');
+//             contactForm.reset();
+//         } else {
+//             throw new Error('Failed to send email');
+//         }
+//     } catch (error) {
+//         console.error(error.message);
+//         alert('An error occurred, please try again later');
+//     }
+// });

@@ -114,8 +114,8 @@
   align-items: center;
 }
 
-.head {
-  font-size: 6em;
+.header {
+  font-size: 1rem;
   margin-bottom: 10px;
   font-weight: bolder;
   color : var(--bg-primary);
@@ -161,9 +161,12 @@ font-size: 2em;
 }
 .intro--container{
   display: flex;
+  flex-direction: row;
 }
 .intro--bio{
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .intro--profile{
   overflow: hidden; 
@@ -178,11 +181,18 @@ font-size: 2em;
   padding: 4px;
   font-weight: 500;
   color: black;
+  width: 92px;
 }
 .resume--btn:hover{
   background-color: #762222e0;
   color: var(--white-color);
   font-weight: bold;
+}
+.intro--photo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .head1{
@@ -223,23 +233,22 @@ font-size: 2em;
 }
 .about--container {
   display: flex;
+  flex-direction: row;
   background-color: var(--container-color);
-    padding: 40px;
+    padding-right: 10px;
     line-height: 50px;
+    padding-top: 20px;
   }
   .about--image{
     position: relative; 
-    width: 600px;
-     height: 280px; 
      overflow: hidden; 
      display: flex;
 justify-content: center;
 align-items: center;
+
   }
-  .about--img{
-display: flex;
-justify-content: center;
-align-items: center;
+  .about--img{ 
+      width: 1000px;
   }
   .about--bio{
     margin: auto;

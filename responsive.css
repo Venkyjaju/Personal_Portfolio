@@ -14,17 +14,15 @@
 @media  screen and (max-width: 930px) {
     .intro--profile{
      
-        width: 450px; 
-        height: 230px; 
-        border-radius: 50%;
-         object-fit: cover;
+      height: auto;
+
     }
   }
   
   
 @media screen and (max-width: 850px) {
     .intro--profile{
-        width: 500px; 
+      width: 550px;
       height: auto;
     }
   }
@@ -34,6 +32,15 @@
 @media  screen and (max-width: 768px) {
     #contact-form {
       width: 100%;
+    }
+    .head1 .text{
+      font-size: 19px;
+    }
+    .head2{
+      font-size: 20px;
+    }
+    .p{
+      font-size: 15px;
     }
   }
 @media screen and (max-width: 700px) {
@@ -50,6 +57,9 @@
   .footer-container{
     display: inline-block;
   }
+  .main{
+    padding: 20px;
+  }
   }
 
 
@@ -57,6 +67,28 @@
     .header{
       padding: 7px 3px;
     }
+    .intro--profile{
+      width: 650px;
+      height: auto;
+    }
+    .intro--bio{
+      line-height: 17px;
+      align-items: start;
+    }
+  }
+  @media screen and (max-width: 650px)  {
+    .intro--container{
+      display: flex;
+      flex-direction: column;
+    }
+    .intro--profile{
+      width: 350px;
+    }
+    .about--container {
+      display: flex;
+      flex-direction: column;
+    }
+
   }
 
 
@@ -102,5 +134,35 @@
       padding: 20px;
       max-width: 60%;
     }
+ 
   }
 
+  @media screen and (max-width: 450px)  {
+    .head1 .text{
+      font-size: 13px;
+    }
+    .head2{
+      font-size: 15px;
+    }
+    .p{
+      font-size: 12px;
+    }
+    .intro--bio{
+      line-height: 14px;
+    }
+    .header {
+      font-size: .8rem;
+      margin-bottom: 5px;
+    }
+    .btn{
+      width: 80px;
+    }
+    .main{
+      padding: 10px;
+    }
+  }
+  @media screen and (max-width: 380px)  {
+    .head1 .text{
+      font-size: 10px;
+    }
+  }
