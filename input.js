@@ -19,10 +19,10 @@ const textLoading = () => {
         text.textContent = "Vyankatesh Jaju";
     }, 0);
     setTimeout(() => {
-        text.textContent = "Front-end developer";
+        text.textContent = "UX/UI designer";
     }, 4000);
     setTimeout(() => {
-        text.textContent = "UI designer";
+        text.textContent = "Front-end developer";
     }, 8000); 
 }
 textLoading();
@@ -33,7 +33,7 @@ setInterval(textLoading, 9000);
 // ===card-1===
 const card1 = document.getElementById('procard1')
 function mycard1() {
-  window.open("https://netflixbyvenky.netlify.app/", "_blank");
+  window.open("https://nflixbyvenkyy.netlify.app/", "_blank");
 }
 
 // ===card-2===
